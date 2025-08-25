@@ -470,17 +470,13 @@
   </profiles>
 
   <distributionManagement>
+
     <repository>
-      <id>terracotta-nexus-staging</id>
-      <name>Terracotta Nexus Staging Repository</name>
-      <url>${terracotta-nexus-staging-url}</url>
-    </repository>
-    <snapshotRepository>
-      <id>terracotta-os-snapshots</id>
-       <uniqueVersion>false</uniqueVersion>
-       <name>Terracotta OS Snapshots Repository</name>
-       <url>${terracotta-os-snapshots-url}</url>
-    </snapshotRepository>
+		<id>RXLOGIX-thirdparty</id>
+        <name>RXLogix Thirdparty Repository</name>
+        <url>http://10.100.21.16:8080/repository/common-component-snapshots/</url>
+	</repository>
+
   </distributionManagement>
 
   <!-- minimal set to find the parent -->
