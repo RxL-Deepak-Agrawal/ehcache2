@@ -101,7 +101,7 @@
               <shaderHint>reduced-pom-only-shader</shaderHint>
               <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
               <useBaseVersion>true</useBaseVersion> 
-              <createSourcesJar>true</createSourcesJar>
+              <createSourcesJar>false</createSourcesJar>
               <shadedArtifactAttached>false</shadedArtifactAttached>
               <keepDependenciesWithProvidedScope>false</keepDependenciesWithProvidedScope>
               <artifactSet>
@@ -141,7 +141,7 @@
               <shaderHint>record-shader</shaderHint>
               <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
               <useBaseVersion>true</useBaseVersion>
-              <createSourcesJar>true</createSourcesJar> 
+              <createSourcesJar>false</createSourcesJar> 
               <shadedArtifactAttached>false</shadedArtifactAttached>
               <keepDependenciesWithProvidedScope>true</keepDependenciesWithProvidedScope>
               <artifactSet>

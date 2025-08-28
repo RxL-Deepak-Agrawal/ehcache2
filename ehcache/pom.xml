@@ -213,6 +213,11 @@
                       <artifactId>hibernate-core</artifactId>
                       <version>${hibernate-core.version}</version>
                     </additionalDependency>
+                    <additionalDependency>
+					  <groupId>javax.servlet</groupId>
+					  <artifactId>javax.servlet-api</artifactId>
+					  <version>3.1.0</version>
+					</additionalDependency>
                   </additionalDependencies>
                   <doclint>none</doclint>
                   <skip>${skipJavadoc}</skip>
@@ -241,7 +246,7 @@
             <configuration>
               <shaderHint>record-shader</shaderHint>
               <useBaseVersion>true</useBaseVersion>
-              <createSourcesJar>true</createSourcesJar>
+              <createSourcesJar>false</createSourcesJar>
               <artifactSet>
                 <includes>
                   <include>net.sf.ehcache.internal:*</include>

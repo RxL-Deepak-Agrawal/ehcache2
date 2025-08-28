@@ -15,9 +15,6 @@
   <packaging>pom</packaging>
   <version>2.10.9.4.10-rx1</version>
 
-  <scm>
-    <developerConnection>scm:git:https://github.com/ehcache/ehcache2.git</developerConnection>
-  </scm>
   
   <properties>
     <slf4j.version>1.7.25</slf4j.version>
@@ -453,20 +450,6 @@
         </plugins>
       </build>
     </profile>
-    <profile>
-      <!-- Profile needed even though identical with one found in parent pom as distributionManagement is declared locally -->
-      <id>deploy-sonatype</id>
-      <distributionManagement>
-        <repository>
-          <id>sonatype-nexus-staging</id>
-          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-        <snapshotRepository>
-          <id>sonatype-nexus-snapshots</id>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
   </profiles>
 
   <distributionManagement>
@@ -484,6 +467,10 @@
     <repository>
       <id>terracotta-releases</id>
       <url>https://repo.terracotta.org/maven2</url>
+    </repository>
+    <repository>
+    	<id>maven-central</id>
+    	<url>https://repo1.maven.org/maven2</url>
     </repository>
   </repositories>
 </project>
