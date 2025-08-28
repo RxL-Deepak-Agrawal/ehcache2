@@ -13,7 +13,7 @@
   <groupId>net.sf.ehcache</groupId>
   <artifactId>ehcache-root</artifactId>
   <packaging>pom</packaging>
-  <version>2.10.9.4.10-rx1</version>
+  <version>2.10.9.4.10-rx2</version>
 
   
   <properties>
@@ -232,6 +232,13 @@
         <version>2.0.2</version>
         <scope>test</scope>
       </dependency>
+	    <dependency>
+	      <groupId>com.fasterxml.jackson</groupId>
+	      <artifactId>jackson-bom</artifactId>
+	      <version>2.15.4</version> <!-- choose desired version -->
+	      <type>pom</type>
+	      <scope>import</scope>
+	    </dependency>
     </dependencies>
   </dependencyManagement>
 
